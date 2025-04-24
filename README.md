@@ -5,6 +5,8 @@
 **Upload files by Paste or Drop – fast and easy!**  
 **Dosyaları yapıştırarak veya sürükleyip bırakarak hızlıca yükleyin!**
 
+![Demo](https://i.imgur.com/x8C1Yvj.gif)
+
 ---
 
 ## 🇬🇧 English
