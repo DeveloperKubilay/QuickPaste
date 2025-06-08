@@ -1,11 +1,11 @@
-# README.md
-
 # 🚀 QuickPaste
 
 **Upload files by Paste or Drop – fast and easy!**  
 **Dosyaları yapıştırarak veya sürükleyip bırakarak hızlıca yükleyin!**
 
 ![Demo](https://i.imgur.com/x8C1Yvj.gif)
+
+[Chrome Web Store](https://chromewebstore.google.com/detail/saveyourtime/noefpbkcooahahhneghdjomngoigjdbf?authuser=0&hl=tr&pli=1)
 
 ---
 
