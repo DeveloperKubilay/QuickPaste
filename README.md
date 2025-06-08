@@ -5,7 +5,7 @@
 
 ![Demo](https://i.imgur.com/x8C1Yvj.gif)
 
-[Chrome Web Store](https://chromewebstore.google.com/detail/saveyourtime/noefpbkcooahahhneghdjomngoigjdbf?authuser=0&hl=tr&pli=1)
+[Chrome Web Store](https://chromewebstore.google.com/detail/quickpaste/nkedlkcdikmebhnhklnoaimdeegeiaim?authuser=0&hl=tr)
 
 ---
 
