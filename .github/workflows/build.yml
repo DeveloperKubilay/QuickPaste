@@ -23,7 +23,7 @@ jobs:
       - name: Edit manifest for Firefox
         run: |
           cp manifest.json manifest_firefox.json
-          jq 'del(.background)' manifest_firefox.json > tmp.json && mv tmp.json manifest_firefox.json
+          jq '.background = {scripts: ["background.js"]} | del(.background.service_worker)' manifest_firefox.json > tmp.json && mv tmp.json manifest_firefox.json
           mv manifest_firefox.json manifest.json
 
       - name: Upload Firefox version
@@ -35,5 +35,4 @@ jobs:
             !installed
             !.git/**/*
             !.github/**/*
-            !background.js
             !.*
