@@ -15,6 +15,7 @@ jobs:
           name: Chrome
           path: |
             **/*
+            !installed/*
             !.git/**/*
             !.github/**/*
             !.*
@@ -31,6 +32,7 @@ jobs:
           name: Firefox
           path: |
             **/*
+            !installed/*
             !.git/**/*
             !.github/**/*
             !.*
