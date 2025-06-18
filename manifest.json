@@ -24,5 +24,11 @@
       "matches": ["<all_urls>"],
       "icon": "./icons/icon48.png"
     }
-  ]
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "quickpaste@addons.local",
+      "strict_min_version": "109.0"
+    }
+  }
 }
