@@ -5,7 +5,11 @@
 
 ![Demo](https://i.imgur.com/x8C1Yvj.gif)
 
-[Chrome Web Store](https://chromewebstore.google.com/detail/quickpaste/nkedlkcdikmebhnhklnoaimdeegeiaim?authuser=0&hl=tr)
+## Download
+<p align="center">
+  <a href="https://chromewebstore.google.com/detail/quickpaste/nkedlkcdikmebhnhklnoaimdeegeiaim">Chrome Web Store</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="https://addons.mozilla.org/tr/firefox/addon/quickpaste">Firefox</a>
+</p>
 
 ---
 
