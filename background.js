@@ -2,7 +2,7 @@ chrome.runtime.onInstalled.addListener(function(details) {
   if (details.reason === 'install') {
     try {
       chrome.tabs.create({
-         url: 'https://developerkubilay.github.io/QuickPaste/installed/thanks.html'
+         url: chrome.runtime.getURL('thanks.html')
       });
     } catch {}
   }
