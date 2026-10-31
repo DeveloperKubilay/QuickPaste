@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">QuickPaste Privacy Policy</title>
+    <link rel="icon" type="image/png" href="icons/icon32.png">
+    <style>
+        :root {
+            --primary: #3b82f6;
+            --primary-dark: #2563eb;
+            --primary-light: rgba(59, 130, 246, 0.12);
+            --bg-dark: #0f172a;
+            --card-bg: #1e293b;
+            --text-light: #f8fafc;
+            --text-muted: #94a3b8;
+            --border: #334155;
+            --accent-green: #4ade80;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            line-height: 1.65;
+            font-size: 16px;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 920px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            flex-grow: 1;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 45px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .logo-wrap {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 72px;
+            height: 72px;
+            border-radius: 16px;
+            background: var(--primary-light);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            margin-bottom: 18px;
+        }
+
+        .logo-wrap svg {
+            width: 40px;
+            height: 40px;
+            fill: var(--primary);
+        }
+
+        header h1 {
+            font-size: 34px;
+            margin-bottom: 10px;
+            color: var(--text-light);
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 18px;
+        }
+
+        .badge-bar {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 18px;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(74, 222, 128, 0.1);
+            color: var(--accent-green);
+            border: 1px solid rgba(74, 222, 128, 0.25);
+            padding: 5px 12px;
+            border-radius: 999px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .policy-section {
+            margin-bottom: 28px;
+            background-color: var(--card-bg);
+            padding: 28px 30px;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .policy-section:hover {
+            transform: translateY(-2px);
+            border-color: rgba(59, 130, 246, 0.4);
+        }
+
+        .policy-section h2 {
+            font-size: 22px;
+            margin-bottom: 14px;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .policy-section p {
+            margin-bottom: 14px;
+            color: var(--text-light);
+        }
+
+        .policy-section p:last-child {
+            margin-bottom: 0;
+        }
+
+        .policy-section ul {
+            margin-left: 22px;
+            margin-bottom: 14px;
+        }
+
+        .policy-section li {
+            margin-bottom: 10px;
+        }
+
+        .highlight {
+            background-color: var(--primary-light);
+            color: #60a5fa;
+            padding: 2px 7px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.25);
+            padding: 24px 20px;
+            text-align: center;
+            border-top: 1px solid var(--border);
+            margin-top: auto;
+        }
+
+        .lang-switcher {
+            margin-bottom: 14px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .lang-switcher select {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            color: var(--text-light);
+            padding: 6px 12px;
+            font-size: 14px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        footer a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        footer p {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 26px;
+            }
+            .policy-section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-wrap">
+                <svg viewBox="0 0 640 512">
+                    <path d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-217c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l39-39V392c0 13.3 10.7 24 24 24s24-10.7 24-24V257.9l39 39c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-80-80c-9.4-9.4-24.6-9.4-33.9 0l-80 80z"/>
+                </svg>
+            </div>
+            <h1 data-i18n="title">QuickPaste Privacy Policy</h1>
+            <p data-i18n="subtitle">How QuickPaste protects your privacy and handles your files</p>
+            <div class="badge-bar">
+                <span class="badge" data-i18n="badge1">✓ Zero Data Collection</span>
+                <span class="badge" data-i18n="badge2">✓ 100% Local Processing</span>
+                <span class="badge" data-i18n="badge3">✓ Open Source</span>
+            </div>
+        </header>
+
+        <section class="policy-section">
+            <h2 data-i18n="s1.title">🛡️ Privacy Commitment</h2>
+            <p data-i18n="s1.p1">At QuickPaste, your privacy is our top priority. QuickPaste operates <span class="highlight">100% locally within your browser</span>. We do not collect, store, transmit, rent, or sell any personal data, browsing history, clipboard content, or uploaded files.</p>
+        </section>
+
+        <section class="policy-section">
+            <h2 data-i18n="s2.title">📂 File & Clipboard Handling</h2>
+            <p data-i18n="s2.p1">QuickPaste is designed solely to help you upload files faster by pasting (Ctrl+V) or dragging and dropping them into standard file upload fields (<code>&lt;input type="file"&gt;</code>).</p>
+            <ul>
+                <li data-i18n="s2.li1">When you paste or drop a file, it is passed <span class="highlight">directly in browser memory</span> to the file input element of the website you are actively using.</li>
+                <li data-i18n="s2.li2">QuickPaste <span class="highlight">never reads, saves, or uploads</span> your files or clipboard data to any external server.</li>
+                <li data-i18n="s2.li3">No file data or metadata is ever persisted by the extension after the action completes.</li>
+            </ul>
+        </section>
+
+        <section class="policy-section">
+            <h2 data-i18n="s3.title">🔒 Zero Data Collection & No Tracking</h2>
+            <p data-i18n="s3.p1">QuickPaste strictly adheres to a zero-telemetry policy:</p>
+            <ul>
+                <li data-i18n="s3.li1"><span class="highlight">No External Servers:</span> The extension makes zero network requests to external APIs or servers.</li>
+                <li data-i18n="s3.li2"><span class="highlight">No Analytics or Tracking:</span> We do not use Google Analytics, tracking pixels, fingerprinting, or any third-party telemetry scripts.</li>
+                <li data-i18n="s3.li3"><span class="highlight">No Cookies or Storage:</span> QuickPaste does not use cookies or store any personal data.</li>
+            </ul>
+        </section>
+
+        <section class="policy-section">
+            <h2 data-i18n="s4.title">🔑 Permissions Justification</h2>
+            <p data-i18n="s4.p1">QuickPaste requests the minimum permissions necessary to function:</p>
+            <ul>
+                <li data-i18n="s4.li1"><strong>Host Permissions (<code>&lt;all_urls&gt;</code> / Content Scripts):</strong> Required solely to detect <code>&lt;input type="file"&gt;</code> fields on the web pages you visit and attach the local paste/drop interface when you click a file input.</li>
+            </ul>
+            <p data-i18n="s4.p2">QuickPaste does not read or monitor any other page content, form inputs, or browsing activity.</p>
+        </section>
+
+        <section class="policy-section">
+            <h2 data-i18n="s5.title">💻 Open Source Transparency</h2>
+            <p data-i18n="s5.p1">QuickPaste is completely open source. Anyone can inspect our source code on GitHub to verify that no user data is collected or transmitted outside your browser.</p>
+        </section>
+
+        <section class="policy-section">
+            <h2 data-i18n="s6.title">📬 Contact</h2>
+            <p data-i18n="s6.p1">If you have any questions regarding this Privacy Policy, please reach out by opening an issue on our <a href="https://github.com/DeveloperKubilay/QuickPaste" target="_blank" style="color: var(--primary);">GitHub Repository</a>.</p>
+        </section>
+    </div>
+
+    <footer>
+        <div class="lang-switcher">
+            <span>🌐</span>
+            <select id="langSelect" aria-label="Language Switcher">
+                <option value="en">🇬🇧 English</option>
+                <option value="tr">🇹🇷 Türkçe</option>
+            </select>
+        </div>
+        <p>QuickPaste | Made with <span style="color: #ef4444;">❤️</span> by <a href="https://github.com/DeveloperKubilay" target="_blank">DeveloperKubilay</a> | <a href="https://github.com/DeveloperKubilay/QuickPaste" target="_blank">GitHub</a></p>
+    </footer>
+
+    <script>
+        const translations = {
+            en: {
+                "title": "QuickPaste Privacy Policy",
+                "subtitle": "How QuickPaste protects your privacy and handles your files",
+                "badge1": "✓ Zero Data Collection",
+                "badge2": "✓ 100% Local Processing",
+                "badge3": "✓ Open Source",
+                "s1.title": "🛡️ Privacy Commitment",
+                "s1.p1": 'At QuickPaste, your privacy is our top priority. QuickPaste operates <span class="highlight">100% locally within your browser</span>. We do not collect, store, transmit, rent, or sell any personal data, browsing history, clipboard content, or uploaded files.',
+                "s2.title": "📂 File & Clipboard Handling",
+                "s2.p1": 'QuickPaste is designed solely to help you upload files faster by pasting (Ctrl+V) or dragging and dropping them into standard file upload fields (<code>&lt;input type="file"&gt;</code>).',
+                "s2.li1": 'When you paste or drop a file, it is passed <span class="highlight">directly in browser memory</span> to the file input element of the website you are actively using.',
+                "s2.li2": 'QuickPaste <span class="highlight">never reads, saves, or uploads</span> your files or clipboard data to any external server.',
+                "s2.li3": "No file data or metadata is ever persisted by the extension after the action completes.",
+                "s3.title": "🔒 Zero Data Collection & No Tracking",
+                "s3.p1": "QuickPaste strictly adheres to a zero-telemetry policy:",
+                "s3.li1": '<span class="highlight">No External Servers:</span> The extension makes zero network requests to external APIs or servers.',
+                "s3.li2": '<span class="highlight">No Analytics or Tracking:</span> We do not use Google Analytics, tracking pixels, fingerprinting, or any third-party telemetry scripts.',
+                "s3.li3": '<span class="highlight">No Cookies or Storage:</span> QuickPaste does not use cookies or store any personal data.',
+                "s4.title": "🔑 Permissions Justification",
+                "s4.p1": "QuickPaste requests the minimum permissions necessary to function:",
+                "s4.li1": '<strong>Host Permissions (<code>&lt;all_urls&gt;</code> / Content Scripts):</strong> Required solely to detect <code>&lt;input type="file"&gt;</code> fields on the web pages you visit and attach the local paste/drop interface when you click a file input.',
+                "s4.p2": "QuickPaste does not read or monitor any other page content, form inputs, or browsing activity.",
+                "s5.title": "💻 Open Source Transparency",
+                "s5.p1": "QuickPaste is completely open source. Anyone can inspect our source code on GitHub to verify that no user data is collected or transmitted outside your browser.",
+                "s6.title": "📬 Contact",
+                "s6.p1": 'If you have any questions regarding this Privacy Policy, please reach out by opening an issue on our <a href="https://github.com/DeveloperKubilay/QuickPaste" target="_blank" style="color: var(--primary);">GitHub Repository</a>.'
+            },
+            tr: {
+                "title": "QuickPaste Gizlilik Politikası",
+                "subtitle": "QuickPaste veri gizliliğinizi nasıl korur ve dosyalarınızı nasıl işler",
+                "badge1": "✓ Sıfır Veri Toplama",
+                "badge2": "✓ %100 Yerel İşleme",
+                "badge3": "✓ Açık Kaynak",
+                "s1.title": "🛡️ Gizlilik Taahhüdü",
+                "s1.p1": 'QuickPaste olarak gizliliğiniz en büyük önceliğimizdir. Bu uzantı <span class="highlight">%100 tarayıcınızın içinde (yerel olarak)</span> çalışır. Hiçbir kişisel veriyi, tarama geçmişini, pano (clipboard) içeriğini veya yüklenen dosyaları toplamaz, saklamaz, dış sunuculara göndermez ve paylaşmaz.',
+                "s2.title": "📂 Dosya ve Pano (Clipboard) İşleme",
+                "s2.p1": 'QuickPaste, yalnızca web sitelerindeki dosya yükleme alanlarına (<code>&lt;input type="file"&gt;</code>) yapıştırarak (Ctrl+V) veya sürükleyip bırakarak hızlıca dosya eklemenizi sağlamak için tasarlanmıştır.',
+                "s2.li1": 'Bir dosyayı yapıştırdığınızda veya sürükleyip bıraktığınızda, dosya <span class="highlight">doğrudan tarayıcı belleği üzerinden</span> o an kullandığınız web sitesinin dosya yükleme kutusuna aktarılır.',
+                "s2.li2": 'QuickPaste dosyalarınızı veya panonuzu <span class="highlight">asla harici bir sunucuya yüklemez, okumaz ve kaydetmez</span>.',
+                "s2.li3": "İşlem tamamlandıktan sonra uzantı tarafından hiçbir dosya veya üst veri (metadata) tutulmaz.",
+                "s3.title": "🔒 Sıfır Veri Toplama ve Takip Yok",
+                "s3.p1": "QuickPaste sıkı bir sıfır-telemetri politikası uygular:",
+                "s3.li1": '<span class="highlight">Harici Sunucu Yok:</span> Uzantı, hiçbir harici sunucuya veya API adresine ağ isteği (network request) göndermez.',
+                "s3.li2": '<span class="highlight">Analitik ve Takip Yok:</span> Google Analytics, takip pikseli veya üçüncü taraf izleme kodları içermez.',
+                "s3.li3": '<span class="highlight">Çerez ve Depolama Yok:</span> QuickPaste çerez (cookie) kullanmaz ve kişisel veri depolamaz.',
+                "s4.title": "🔑 İzin Gerekçeleri",
+                "s4.p1": "QuickPaste çalışabilmek için yalnızca en temel izne ihtiyaç duyar:",
+                "s4.li1": '<strong>Ana Makine İzni (<code>&lt;all_urls&gt;</code> / Content Scripts):</strong> Yalnızca ziyaret ettiğiniz sayfalardaki <code>&lt;input type="file"&gt;</code> (dosya seçme) kutularını algılamak ve tıkladığınızda yerel yapıştır/sürükle-bırak arayüzünü göstermek için kullanılır.',
+                "s4.p2": "QuickPaste sayfadaki diğer metinleri, şifreleri, formları veya gezinme geçmişinizi okumaz ve izlemez.",
+                "s5.title": "💻 Açık Kaynak Şeffaflığı",
+                "s5.p1": "QuickPaste tamamen açık kaynak kodlu bir projedir. İsteyen herkes GitHub üzerinden kaynak kodlarımızı inceleyebilir ve dışarıya hiçbir veri gönderilmediğini doğrulayabilir.",
+                "s6.title": "📬 İletişim",
+                "s6.p1": 'Gizlilik politikamız hakkında sorularınız için <a href="https://github.com/DeveloperKubilay/QuickPaste" target="_blank" style="color: var(--primary);">GitHub Projemiz</a> üzerinden bizimle iletişime geçebilirsiniz.'
+            }
+        };
+
+        function applyLang(lang) {
+            const dict = translations[lang] || translations.en;
+            document.documentElement.lang = lang;
+            document.title = dict.title;
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (dict[key]) {
+                    el.innerHTML = dict[key];
+                }
+            });
+            const select = document.getElementById('langSelect');
+            if (select) select.value = lang;
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            let saved = null;
+            try { saved = localStorage.getItem('qp_lang'); } catch {}
+            const browserLang = (navigator.language || 'en').toLowerCase().startsWith('tr') ? 'tr' : 'en';
+            const initialLang = saved || browserLang;
+            applyLang(initialLang);
+
+            document.getElementById('langSelect').addEventListener('change', (e) => {
+                const val = e.target.value;
+                try { localStorage.setItem('qp_lang', val); } catch {}
+                applyLang(val);
+            });
+        });
+    </script>
+</body>
+</html>
